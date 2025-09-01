@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Mi hoja de vida</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+		body {
+		  background-image: url('FONDO.jpg');
+		  background-repeat: no-repeat;
+		  background-attachment: fixed;
+		  background-size: 100% 100%;
+		}
+		
+        /* Estilos del contenedor flex sin borde */
+        .container {
+            display: flex;
+            align-items: center;
+            max-width: 600px;
+            padding: 10px;
+            gap: 15px;
+        }
+        .container img {
+            width: 150px;
+            height: auto;
+            flex-shrink: 0;
+            border-radius: 5px;
+        }
+        .texto {
+            flex: 1;
+        }
+        .texto h1, .texto h2 {
+            margin: 0 0 10px 0;
+        }
+        .texto p {
+            margin: 5px 0;
+        }
+
+        /* Estilos para la tabla */
+        table {
+            font-family: Arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 20px;
+        }
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+    </style>
+</head>
+<body>
+    <div style="display: flex; align-items: flex-start; gap: 20px;">
+		<img src="FOTO.jpg" alt="Descripción de la foto" style="width: 150px; height: auto; border-radius: 5px;">
+		<div>
+			<h1>KATHERINE MONROY FUQUEN</h1>
+			<p><b>CORREO:</b> kmonroyf@unal.edu.co</p>
+			<p><b>TELÉFONO:</b> 300 7062010</p>
+			<p>
+				Geógrafa con experiencia laboral en el área del Sistemas de Información Geográfica, Dinámicas Ambientales y Planificación Territorial, manejo de geografía rural y urbana, elaboración de informes técnicos, trabajo en campo, levantamiento y análisis de información y reporte de novedades. Con competencias laborales como orientación al detalle de forma precisa, propositiva, capacidad de análisis, orientación a resultados y compromiso.
+			</p>
+		</div>
+	</div>
+	<h2><b>¿QUE ESTUDIÉ?</b></h2>
+    <h3><b>EDUCACIÓN FORMAL</b></h3>
+    <table>
+        <tr>
+            <th>UNIVERSIDAD</th>
+            <th>CARRERA</th>
+            <th>AÑO DE INICIO</th>
+            <th>AÑO FINAL</th>
+        </tr>
+        <tr>
+            <td>Universidad Distrital Francisco José de Caldas</td>
+            <td>Especialización en Sistema de Información Geográfica</td>
+            <td>2025</td>
+            <td>En proceso</td>
+        </tr>
+        <tr>
+            <td>Universidad Nacional de Colombia</td>
+            <td>Geografía</td>
+            <td>2016</td>
+            <td>2022</td>
+        </tr>
+        <tr>
+            <td>Gimnasio Académico Regional</td>
+            <td>Bachiller Técnico-Comercial</td>
+            <td>2010</td>
+            <td>2015</td>
+        </tr>
+    </table>
+	
+	<h3><b>FORMACIÓN COMPLEMENTARIA</b></h3>
+    <table>
+        <tr>
+            <th>UNIVERSIDAD</th>
+            <th>TITULO DE CURSO</th>
+            <th>FECHA DE CERTIFICACIÓN</th>
+            <th>DURACIÓN</th>
+        </tr>
+        <tr>
+            <td>CISCO SYSTEMS COLOMBIA-Universidad Nacional Abierta y a distancia</td>
+            <td>Skills for Jobs in Vulnerable Populations. Redes, ciberseguridad y Python.</td>
+            <td>En proceso</td>
+            <td>48 Horas</td>
+        </tr>
+        <tr>
+            <td>instituto Geográfico Agustín Codazzi (IGAC)</td>
+            <td>Curso de Fundamentos de la Administración de Tierras</td>
+            <td>26 de agosto del 2024</td>
+            <td>42 Horas</td>
+        </tr>
+        <tr>
+            <td>Vicepresidencia de la Republica de Colombia-Universidad Nacional Abierta y a distancia</td>
+            <td>Curso formulación y estructuración de proyectos de inversiones con enfoque étnico</td>
+            <td>28 de Junio del 2024</td>
+            <td>42 Horas</td>
+        </tr>
+		<tr>
+			<td>UNIVERSIDAD NACIONAL DE COLOMBIA</td>
+            <td>Diplomado de Cultura política, democracia, y gestión pública</td>
+            <td>30 de junio del 2024</td>
+            <td>45 Horas</td>
+		</tr>
+		<tr>
+			<td>Ministerio de las TIC- Universidad Distrital Francisco José de Caldas</td>
+            <td>Curso de Analítica de Datos</td>
+            <td>30 de Mayo del 2024</td>
+            <td>28 Horas</td>
+		</tr>
+		
+    </table>
+
+</body>
+</html>
