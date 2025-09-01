@@ -1,30 +1,48 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <title>Mi hoja de vida</title>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi Hoja de Vida</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
- <header class="encabezado">
-    <h1 class="encabezado-titulo">KATHERINE MONROY FUQUEN</h1>
-    </header>
-    <main class="layout" >
-         <article>
-            <h2 class="vista-oculta">Servicios</h2>
-            <iframe src="./html/servicios.html" title="servicios" name="contenido"></iframe>                
-        </article>
-        <nav>
+
+    <!-- Encabezado con logo y menú -->
+    <header class="encabezado">
+        <div class="logo">
+            <img src="img/logo.png" alt="Logo" />
+        </div>
+        <nav class="menu">
             <ul>
-            <li><a href="./html/servicios.html" target="contenido">Servicios</a></li>
-            <li><a href="./html/Mi_Hoja_de_Vida.html" target="contenido">Hoja de vida</a></li>
-            <li><a href="./html/mapeo.html" target="_blank" >Áreas turísticas</a></li>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="./html/Mi_Hoja_de_Vida.html" target="iframe">Quiénes Somos</a></li>
+                <li><a href="./html/servicios.html" target="iframe">Servicios</a></li>
+                <li><a href="./html/mapeo.html" target="_blank">Áreas Turísticas</a></li>
+                <li><a href="#">Contacto</a></li>
             </ul>
-        </nav>           
+        </nav>
+    </header>
+
+    <!-- Sección principal con imagen de fondo y texto -->
+    <main class="hero">
+        <img src="img/banner.jpg" alt="Túnel subterráneo" class="hero-img" />
+
+        <!-- Texto superpuesto sobre la imagen -->
+        <div class="hero-text">
+            <h2>UNDERGROUND MAPPING</h2>
+            <p>INVENTARIO Y GESTIÓN DE REDES SUBTERRÁNEAS</p>
+        </div>
+
+        <!-- Botones de navegación laterales -->
+        <button class="carousel-btn prev"><</button>
+        <button class="carousel-btn next">></button>
     </main>
+
+    <!-- Footer -->
     <footer>
-    <p>Contacto</p>
+        <p>Contacto</p>
     </footer>
 
-    </body>
 </body>
+</html>

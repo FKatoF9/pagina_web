@@ -8,7 +8,7 @@
 </head>
 <body>
 
-    <!-- Encabezado -->
+    <!-- Encabezado con logo y menú -->
     <header class="encabezado">
         <div class="logo">
             <img src="img/logo.png" alt="Logo" />
@@ -16,27 +16,27 @@
         <nav class="menu">
             <ul>
                 <li><a href="#" class="active">Home</a></li>
-                <li><a href="./html/Mi_Hoja_de_Vida.html" target="iframe">Quienes Somos</a></li>
+                <li><a href="./html/Mi_Hoja_de_Vida.html" target="iframe">Quiénes Somos</a></li>
                 <li><a href="./html/servicios.html" target="iframe">Servicios</a></li>
-                <li><a href="./html/mapeo.html" target="_blank">Áreas turísticas</a></li>
+                <li><a href="./html/mapeo.html" target="_blank">Áreas Turísticas</a></li>
                 <li><a href="#">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Sección principal con imagen de fondo -->
+    <!-- Sección principal con imagen de fondo y texto -->
     <main class="hero">
-        <div class="carousel-container">
-            <div class="carousel-item active">
-                <img src="img/banner.jpg" alt="Túnel subterráneo" class="banner-img" />
-                <div class="overlay-text">
-                    <h2>UNDERGROUND MAPPING - INVENTARIO DE REDES SUBTERRÁNEAS</h2>
-                </div>
-            </div>
-            <!-- Botones de navegación -->
-            <button class="carousel-btn prev"><</button>
-            <button class="carousel-btn next">></button>
+        <img src="img/banner.jpg" alt="Túnel subterráneo" class="hero-img" />
+
+        <!-- Texto superpuesto sobre la imagen -->
+        <div class="hero-text">
+            <h2>UNDERGROUND MAPPING</h2>
+            <p>INVENTARIO Y GESTIÓN DE REDES SUBTERRÁNEAS</p>
         </div>
+
+        <!-- Botones de navegación laterales -->
+        <button class="carousel-btn prev"><</button>
+        <button class="carousel-btn next">></button>
     </main>
 
     <!-- Footer -->
@@ -44,6 +44,5 @@
         <p>Contacto</p>
     </footer>
 
-    <script src="script.js"></script>
 </body>
 </html>
