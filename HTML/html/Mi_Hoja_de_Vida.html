@@ -1,140 +1,126 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
-	<title>Mi hoja de vida</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-		body {
-		  background-image: url('FONDO.jpg');
-		  background-repeat: no-repeat;
-		  background-attachment: fixed;
-		  background-size: 100% 100%;
-		}
-		
-        /* Estilos del contenedor flex sin borde */
-        .container {
-            display: flex;
-            align-items: center;
-            max-width: 600px;
-            padding: 10px;
-            gap: 15px;
-        }
-        .container img {
-            width: 150px;
-            height: auto;
-            flex-shrink: 0;
-            border-radius: 5px;
-        }
-        .texto {
-            flex: 1;
-        }
-        .texto h1, .texto h2 {
-            margin: 0 0 10px 0;
-        }
-        .texto p {
-            margin: 5px 0;
-        }
-
-        /* Estilos para la tabla */
-        table {
-            font-family: Arial, sans-serif;
-            border-collapse: collapse;
-            width: 100%;
-            margin-top: 20px;
-        }
-        td, th {
-            border: 1px solid #dddddd;
-            text-align: left;
-            padding: 8px;
-        }
-        tr:nth-child(even) {
-            background-color: #dddddd;
-        }
-    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi Hoja de Vida - Katherine Monroy</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <div style="display: flex; align-items: flex-start; gap: 20px;">
-		<img src="FOTO.jpg" alt="Descripción de la foto" style="width: 150px; height: auto; border-radius: 5px;">
-		<div>
-			<h1>KATHERINE MONROY FUQUEN</h1>
-			<p><b>CORREO:</b> kmonroyf@unal.edu.co</p>
-			<p><b>TELÉFONO:</b> 300 7062010</p>
-			<p>
-				Geógrafa con experiencia laboral en el área del Sistemas de Información Geográfica, Dinámicas Ambientales y Planificación Territorial, manejo de geografía rural y urbana, elaboración de informes técnicos, trabajo en campo, levantamiento y análisis de información y reporte de novedades. Con competencias laborales como orientación al detalle de forma precisa, propositiva, capacidad de análisis, orientación a resultados y compromiso.
-			</p>
-		</div>
-	</div>
-	<h2><b>¿QUE ESTUDIÉ?</b></h2>
-    <h3><b>EDUCACIÓN FORMAL</b></h3>
-    <table>
-        <tr>
-            <th>UNIVERSIDAD</th>
-            <th>CARRERA</th>
-            <th>AÑO DE INICIO</th>
-            <th>AÑO FINAL</th>
-        </tr>
-        <tr>
-            <td>Universidad Distrital Francisco José de Caldas</td>
-            <td>Especialización en Sistema de Información Geográfica</td>
-            <td>2025</td>
-            <td>En proceso</td>
-        </tr>
-        <tr>
-            <td>Universidad Nacional de Colombia</td>
-            <td>Geografía</td>
-            <td>2016</td>
-            <td>2022</td>
-        </tr>
-        <tr>
-            <td>Gimnasio Académico Regional</td>
-            <td>Bachiller Técnico-Comercial</td>
-            <td>2010</td>
-            <td>2015</td>
-        </tr>
-    </table>
-	
-	<h3><b>FORMACIÓN COMPLEMENTARIA</b></h3>
-    <table>
-        <tr>
-            <th>UNIVERSIDAD</th>
-            <th>TITULO DE CURSO</th>
-            <th>FECHA DE CERTIFICACIÓN</th>
-            <th>DURACIÓN</th>
-        </tr>
-        <tr>
-            <td>CISCO SYSTEMS COLOMBIA-Universidad Nacional Abierta y a distancia</td>
-            <td>Skills for Jobs in Vulnerable Populations. Redes, ciberseguridad y Python.</td>
-            <td>En proceso</td>
-            <td>48 Horas</td>
-        </tr>
-        <tr>
-            <td>instituto Geográfico Agustín Codazzi (IGAC)</td>
-            <td>Curso de Fundamentos de la Administración de Tierras</td>
-            <td>26 de agosto del 2024</td>
-            <td>42 Horas</td>
-        </tr>
-        <tr>
-            <td>Vicepresidencia de la Republica de Colombia-Universidad Nacional Abierta y a distancia</td>
-            <td>Curso formulación y estructuración de proyectos de inversiones con enfoque étnico</td>
-            <td>28 de Junio del 2024</td>
-            <td>42 Horas</td>
-        </tr>
-		<tr>
-			<td>UNIVERSIDAD NACIONAL DE COLOMBIA</td>
-            <td>Diplomado de Cultura política, democracia, y gestión pública</td>
-            <td>30 de junio del 2024</td>
-            <td>45 Horas</td>
-		</tr>
-		<tr>
-			<td>Ministerio de las TIC- Universidad Distrital Francisco José de Caldas</td>
-            <td>Curso de Analítica de Datos</td>
-            <td>30 de Mayo del 2024</td>
-            <td>28 Horas</td>
-		</tr>
-		
-    </table>
+
+    <!-- Encabezado con logo y menú (igual que en index.html) -->
+    <header class="encabezado">
+        <div class="logo">
+            <img src="img/Logo1.png" alt="Logo1" />
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="#" class="active">Quiénes Soy</a></li>
+                <li><a href="./Factura.html" target="iframe">Factura</a></li>
+                <li><a href="./mapeo.html" target="_blank">Mapeo</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección principal: Hoja de Vida -->
+    <main class="hero" style="background-color: #f4f4f4; min-height: 100vh; padding: 40px 20px;">
+        <!-- Contenido de la hoja de vida -->
+        <div style="max-width: 1000px; margin: 0 auto; background: white; padding: 30px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); color: #333;">
+
+            <!-- Foto y datos personales -->
+            <div style="display: flex; align-items: flex-start; gap: 30px; margin-bottom: 30px;">
+                <img src="FOTO.jpg" alt="Katherine Monroy Fuquen" style="width: 150px; height: auto; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.2);">
+                <div>
+                    <h1 style="margin: 0; font-size: 2.2rem; color: #2c3e50;">KATHERINE MONROY FUQUEN</h1>
+                    <p><strong>CORREO:</strong> kmonroyf@unal.edu.co</p>
+                    <p><strong>TELÉFONO:</strong> 300 7062010</p>
+                    <p style="line-height: 1.7; margin-top: 10px;">
+                        Geógrafa con experiencia laboral en Sistemas de Información Geográfica, Dinámicas Ambientales y Planificación Territorial. 
+                        Manejo de geografía rural y urbana, elaboración de informes técnicos, trabajo en campo, levantamiento y análisis de información, 
+                        reporte de novedades. Orientada al detalle, propositiva, con capacidad de análisis, orientación a resultados y compromiso.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Educación formal -->
+            <h2 style="color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 5px; margin-bottom: 15px;"><b>¿QUÉ ESTUDIÉ?</b></h2>
+            <h3 style="color: #2c3e50; margin-bottom: 10px;"><b>EDUCACIÓN FORMAL</b></h3>
+            <table style="width: 100%; border-collapse: collapse; margin-bottom: 30px; font-size: 0.95rem;">
+                <tr style="background-color: #3498db; color: white;">
+                    <th style="padding: 12px; text-align: left;">UNIVERSIDAD</th>
+                    <th style="padding: 12px; text-align: left;">CARRERA</th>
+                    <th style="padding: 12px; text-align: left;">AÑO DE INICIO</th>
+                    <th style="padding: 12px; text-align: left;">AÑO FINAL</th>
+                </tr>
+                <tr>
+                    <td style="padding: 10px; border: 1px solid #ddd;">Universidad Distrital Francisco José de Caldas</td>
+                    <td style="padding: 10px; border: 1px solid #ddd;">Especialización en Sistema de Información Geográfica</td>
+                    <td style="padding: 10px; border: 1px solid #ddd;">2025</td>
+                    <td style="padding: 10px; border: 1px solid #ddd;">En proceso</td>
+                </tr>
+                <tr style="background-color: #f9f9f9;">
+                    <td style="padding: 10px; border: 1px solid #ddd;">Universidad Nacional de Colombia</td>
+                    <td style="padding: 10px; border: 1px solid #ddd;">Geografía</td>
+                    <td style="padding: 10px; border: 1px solid #ddd;">2016</td>
+                    <td style="padding: 10px; border: 1px solid #ddd;">2022</td>
+                </tr>
+                <tr>
+                    <td style="padding: 10px; border: 1px solid #ddd;">Gimnasio Académico Regional</td>
+                    <td style="padding: 10px; border: 1px solid #ddd;">Bachiller Técnico-Comercial</td>
+                    <td style="padding: 10px; border: 1px solid #ddd;">2010</td>
+                    <td style="padding: 10px; border: 1px solid #ddd;">2015</td>
+                </tr>
+            </table>
+
+            <!-- Formación complementaria -->
+            <h3 style="color: #2c3e50; margin-bottom: 10px;"><b>FORMACIÓN COMPLEMENTARIA</b></h3>
+            <table style="width: 100%; border-collapse: collapse; font-size: 0.95rem;">
+                <tr style="background-color: #3498db; color: white;">
+                    <th style="padding: 12px; text-align: left;">UNIVERSIDAD</th>
+                    <th style="padding: 12px; text-align: left;">TÍTULO DE CURSO</th>
+                    <th style="padding: 12px; text-align: left;">FECHA DE CERTIFICACIÓN</th>
+                    <th style="padding: 12px; text-align: left;">DURACIÓN</th>
+                </tr>
+                <tr>
+                    <td style="padding: 10px; border: 1px solid #ddd;">CISCO SYSTEMS COLOMBIA - UNAD</td>
+                    <td style="padding: 10px; border: 1px solid #ddd;">Skills for Jobs: Redes, ciberseguridad y Python</td>
+                    <td style="padding: 10px; border: 1px solid #ddd;">En proceso</td>
+                    <td style="padding: 10px; border: 1px solid #ddd;">48 Horas</td>
+                </tr>
+                <tr style="background-color: #f9f9f9;">
+                    <td style="padding: 10px; border: 1px solid #ddd;">Instituto Geográfico Agustín Codazzi (IGAC)</td>
+                    <td style="padding: 10px; border: 1px solid #ddd;">Fundamentos de la Administración de Tierras</td>
+                    <td style="padding: 10px; border: 1px solid #ddd;">26 de agosto del 2024</td>
+                    <td style="padding: 10px; border: 1px solid #ddd;">42 Horas</td>
+                </tr>
+                <tr>
+                    <td style="padding: 10px; border: 1px solid #ddd;">Vicepresidencia - UNAD</td>
+                    <td style="padding: 10px; border: 1px solid #ddd;">Formulación de proyectos con enfoque étnico</td>
+                    <td style="padding: 10px; border: 1px solid #ddd;">28 de junio del 2024</td>
+                    <td style="padding: 10px; border: 1px solid #ddd;">42 Horas</td>
+                </tr>
+                <tr style="background-color: #f9f9f9;">
+                    <td style="padding: 10px; border: 1px solid #ddd;">Universidad Nacional de Colombia</td>
+                    <td style="padding: 10px; border: 1px solid #ddd;">Diplomado en Cultura política y gestión pública</td>
+                    <td style="padding: 10px; border: 1px solid #ddd;">30 de junio del 2024</td>
+                    <td style="padding: 10px; border: 1px solid #ddd;">45 Horas</td>
+                </tr>
+                <tr>
+                    <td style="padding: 10px; border: 1px solid #ddd;">MinTIC - Universidad Distrital</td>
+                    <td style="padding: 10px; border: 1px solid #ddd;">Curso de Analítica de Datos</td>
+                    <td style="padding: 10px; border: 1px solid #ddd;">30 de mayo del 2024</td>
+                    <td style="padding: 10px; border: 1px solid #ddd;">28 Horas</td>
+                </tr>
+            </table>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Katherine Monroy Fuquen - Todos los derechos reservados</p>
+    </footer>
 
 </body>
 </html>
