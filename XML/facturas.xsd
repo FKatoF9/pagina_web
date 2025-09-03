@@ -1,5 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+  <!-- Elemento raíz -->
   <xs:element name="servicios">
     <xs:complexType>
       <xs:sequence>
@@ -8,6 +10,8 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
+
+  <!-- Encabezado -->
   <xs:element name="encabezado">
     <xs:complexType>
       <xs:sequence>
@@ -16,6 +20,8 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
+
+  <!-- Emisor -->
   <xs:element name="emisor">
     <xs:complexType>
       <xs:sequence>
@@ -26,11 +32,15 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
+
+  <!-- Título -->
   <xs:element name="titulo">
     <xs:complexType mixed="true">
       <xs:attribute name="lang" type="xs:string" use="required"/>
     </xs:complexType>
   </xs:element>
+
+  <!-- Lista de facturas -->
   <xs:element name="facturas">
     <xs:complexType>
       <xs:sequence>
@@ -38,6 +48,8 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
+
+  <!-- Una factura -->
   <xs:element name="factura">
     <xs:complexType>
       <xs:sequence>
@@ -48,6 +60,8 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
+
+  <!-- Receptor -->
   <xs:element name="receptor">
     <xs:complexType>
       <xs:sequence>
@@ -59,13 +73,17 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
+
+  <!-- Detalles (contiene uno o más ítems) -->
   <xs:element name="detalles">
     <xs:complexType>
       <xs:sequence>
-        <xs:element ref="item"/>
+        <xs:element ref="item" maxOccurs="unbounded"/>
       </xs:sequence>
     </xs:complexType>
   </xs:element>
+
+  <!-- Ítem individual -->
   <xs:element name="item">
     <xs:complexType>
       <xs:sequence>
@@ -77,4 +95,5 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
+
 </xs:schema>
