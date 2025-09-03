@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<servicios xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:noNamespaceSchemaLocation="facturaxsd.xsd">
+    
+    <!-- ENCABEZADO ÚNICO (una sola vez para todas las facturas) -->
+    <encabezado>
+        <emisor>
+            <nombre>KATHERINE MONROY FUQUEN</nombre>
+            <codigo>20252094017</codigo>
+            <telefono>3007062010</telefono>
+            <correo>kmonroyf@udistrital.edu.co</correo>
+        </emisor>
+        <titulo lang="es">FACTURA DE VENTA</titulo>
+        <!-- Puedes agregar info adicional aquí si el XSD lo requiere -->
+    </encabezado>
+
+    <!-- LISTA DE FACTURAS -->
+    <facturas>
+        
+        <!-- Factura 0001 -->
+        <factura>
+            <receptor>
+                <nombre>Juan Jose Nieto Gil</nombre>
+                <nit>1022123456</nit>
+                <direccion>KR 70 # 32-45, Bogotá D.C.</direccion>
+                <telefono>3001234567</telefono>
+                <correo>Minegjuanjo@gmail.com</correo>
+            </receptor>
+            <fechaemisor>2025-09-01</fechaemisor>
+            <numerofactura>0001</numerofactura>
+            <detalles>
+                <item>
+                    <servicio>Diseño de mapa administrativo del Municipio de Baranoa, Atlantico</servicio>
+                    <cantidad>2</cantidad>
+                    <unidad>Unidad</unidad>
+                    <preciouni>35000</preciouni>
+                    <preciotot>70000</preciotot>
+                </item>
+            </detalles>
+        </factura>
+
+        <!-- Factura 0002 -->
+        <factura>
+            <receptor>
+                <nombre>María Fernanda López Ortiz</nombre>
+                <nit>1112223334</nit>
+                <direccion>CALLE 45 # 12-89, Medellín, Antioquia</direccion>
+                <telefono>3105556789</telefono>
+                <correo>mlopez@empresa.com.co</correo>
+            </receptor>
+            <fechaemisor>2025-09-02</fechaemisor>
+            <numerofactura>0002</numerofactura>
+            <detalles>
+                <item>
+                    <servicio>Asesoramiento de prevenciòn de gestiòn de riesgos por inundaciòn en el barrio Villa Cindy, Localidad de Suba</servicio>
+                    <cantidad>6</cantidad>
+                    <unidad>horas</unidad>
+                    <preciouni>45500</preciouni>
+                    <preciotot>273000</preciotot>
+                </item>
+            </detalles>
+        </factura>
+
+        <!-- Factura 0003 -->
+        <factura>
+            <receptor>
+                <nombre>Thomas Albeiro Santana</nombre>
+                <nit>1034567890</nit>
+                <direccion>AV 19 # 98-23 Of. 501, Bogotá D.C.</direccion>
+                <telefono>3201112233</telefono>
+                <correo>Errante3102@gmail.com</correo>
+            </receptor>
+            <fechaemisor>2025-09-03</fechaemisor>
+            <numerofactura>0003</numerofactura>
+            <detalles>
+                <item>
+                    <servicio>Mantenimiento de servidores</servicio>
+                    <cantidad>4</cantidad>
+                    <unidad>horas</unidad>
+                    <preciouni>65000</preciouni>
+                    <preciotot>260000</preciotot>
+                </item>
+            </detalles>
+        </factura>
+
+        <!-- Factura 0004 -->
+        <factura>
+            <receptor>
+                <nombre>Laura Vanessa Pérez</nombre>
+                <nit>1078901234</nit>
+                <direccion>CRA 50 # 70-10, Cali, Valle del Cauca</direccion>
+                <telefono>3112223344</telefono>
+                <correo>lvperez@gmail.com</correo>
+            </receptor>
+            <fechaemisor>2025-09-04</fechaemisor>
+            <numerofactura>0004</numerofactura>
+            <detalles>
+                <item>
+                    <servicio>Implementaciòn del uso de fotogametria para el desarrollo del cultivo de cafè en el Municipio de LA Uniòn, valle del Cauca</servicio>
+                    <cantidad>20</cantidad>
+                    <unidad>dias</unidad>
+                    <preciouni>570000</preciouni>
+                    <preciotot>11400000</preciotot>
+                </item>
+            </detalles>
+        </factura>
+
+        <!-- Factura 0005 -->
+        <factura>
+            <receptor>
+                <nombre>Andrés Felipe Mendoza</nombre>
+                <nit>1001234567</nit>
+                <direccion>CLL 100 # 15-25, Barranquilla, Atlántico</direccion>
+                <telefono>3019876543</telefono>
+                <correo>afmendoza@tecnosoft.co</correo>
+            </receptor>
+            <fechaemisor>2025-09-05</fechaemisor>
+            <numerofactura>0005</numerofactura>
+            <detalles>
+                <item>
+                    <servicio>Desarrollo de aplicación móvil para el registro Catastral de Barranquilla</servicio>
+                    <cantidad>1</cantidad>
+                    <unidad>proyecto</unidad>
+                    <preciouni>20654099421</preciouni>
+                    <preciotot>20654099421</preciotot>
+                </item>
+            </detalles>
+        </factura>
+
+        <!-- Factura 0006 -->
+        <factura>
+            <receptor>
+                <nombre>Sofía Ramírez Duarte</nombre>
+                <nit>1145678901</nit>
+                <direccion>AV 68 # 13-40, Bogotá D.C.</direccion>
+                <telefono>3123456789</telefono>
+                <correo>sofiaramirez@educar.com.co</correo>
+            </receptor>
+            <fechaemisor>2025-09-06</fechaemisor>
+            <numerofactura>0006</numerofactura>
+            <detalles>
+                <item>
+                    <servicio>Asesoría pedagógica de cartografia digital para el Instituto de Educaciòn Rural Francisco de Paula Santander, Cogua, Cundinamarca</servicio>
+                    <cantidad>1</cantidad>
+                    <unidad>Proyecto</unidad>
+                    <preciouni>82740000</preciouni>
+                    <preciotot>82740000</preciotot>
+                </item>
+            </detalles>
+        </factura>
+
+        <!-- Factura 0007 -->
+        <factura>
+            <receptor>
+                <nombre>Diego Fernando Ocampo</nombre>
+                <nit>1087654321</nit>
+                <direccion>CRA 72 # 45-80, Medellín, Antioquia</direccion>
+                <telefono>4442345</telefono>
+                <correo>diocampo@innovatec.co</correo>
+            </receptor>
+            <fechaemisor>2025-09-07</fechaemisor>
+            <numerofactura>0007</numerofactura>
+            <detalles>
+                <item>
+                    <servicio>Soporte técnico remoto</servicio>
+                    <cantidad>6</cantidad>
+                    <unidad>horas</unidad>
+                    <preciouni>55000</preciouni>
+                    <preciotot>330000</preciotot>
+                </item>
+            </detalles>
+        </factura>
+
+        <!-- Factura 0008 -->
+        <factura>
+            <receptor>
+                <nombre>Valentina Sánchez Gómez</nombre>
+                <nit>1098765432</nit>
+                <direccion>CLL 8 # 100-20, Cartagena, Bolívar</direccion>
+                <telefono>3156789012</telefono>
+                <correo>valsanchez@marketdigital.com</correo>
+            </receptor>
+            <fechaemisor>2025-09-08</fechaemisor>
+            <numerofactura>0008</numerofactura>
+            <detalles>
+                <item>
+                    <servicio>Consultoría en marketing digital</servicio>
+                    <cantidad>12</cantidad>
+                    <unidad>horas</unidad>
+                    <preciouni>50000</preciouni>
+                    <preciotot>600000</preciotot>
+                </item>
+            </detalles>
+        </factura>
+
+        <!-- Factura 0009 -->
+        <factura>
+            <receptor>
+                <nombre>Jorge Luis Herrera</nombre>
+                <nit>1055544433</nit>
+                <direccion>AV 3 # 21-50, Bucaramanga, Santander</direccion>
+                <telefono>7654321</telefono>
+                <correo>jorgelh@logistica.com.co</correo>
+            </receptor>
+            <fechaemisor>2025-09-09</fechaemisor>
+            <numerofactura>0009</numerofactura>
+            <detalles>
+                <item>
+                    <servicio>Automatización de procesos para el desarrollo web de </servicio>
+                    <cantidad>15</cantidad>
+                    <unidad>horas</unidad>
+                    <preciouni>70000</preciouni>
+                    <preciotot>1050000</preciotot>
+                </item>
+            </detalles>
+        </factura>
+
+        <!-- Factura 0010 -->
+        <factura>
+            <receptor>
+                <nombre>Pilar Restrepo Martínez</nombre>
+                <nit>1100011122</nit>
+                <direccion>CRA 10 # 45-67, Pereira, Risaralda</direccion>
+                <telefono>3178889990</telefono>
+                <correo>pilarm@agroexport.com</correo>
+            </receptor>
+            <fechaemisor>2025-09-10</fechaemisor>
+            <numerofactura>0010</numerofactura>
+            <detalles>
+                <item>
+                    <servicio>Desarrollo del mapa de seguimiento del manejo del agua en la cuenca hidrica del Rio Chinchilla</servicio>
+                    <cantidad>6</cantidad>
+                    <unidad>unidades</unidad>
+                    <preciouni>75000</preciouni>
+                    <preciotot>450000</preciotot>
+                </item>
+            </detalles>
+        </factura>
+
+    </facturas>
+</servicios>
