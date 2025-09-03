@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <servicios xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-          xsi:noNamespaceSchemaLocation="facturaxsd.xsd">
+          xsi:noNamespaceSchemaLocation="facturas.xsd">
     
-    <!-- ENCABEZADO ÚNICO (una sola vez para todas las facturas) -->
+    <!-- ENCABEZADO ÚNICO -->
     <encabezado>
         <emisor>
             <nombre>KATHERINE MONROY FUQUEN</nombre>
@@ -11,7 +11,6 @@
             <correo>kmonroyf@udistrital.edu.co</correo>
         </emisor>
         <titulo lang="es">FACTURA DE VENTA</titulo>
-        <!-- Puedes agregar info adicional aquí si el XSD lo requiere -->
     </encabezado>
 
     <!-- LISTA DE FACTURAS -->
@@ -30,7 +29,7 @@
             <numerofactura>0001</numerofactura>
             <detalles>
                 <item>
-                    <servicio>Diseño de mapa administrativo del Municipio de Baranoa, Atlantico</servicio>
+                    <servicio>Diseño de mapa administrativo del Municipio de Baranoa, Atlántico</servicio>
                     <cantidad>2</cantidad>
                     <unidad>Unidad</unidad>
                     <preciouni>35000</preciouni>
@@ -52,7 +51,7 @@
             <numerofactura>0002</numerofactura>
             <detalles>
                 <item>
-                    <servicio>Asesoramiento de prevenciòn de gestiòn de riesgos por inundaciòn en el barrio Villa Cindy, Localidad de Suba</servicio>
+                    <servicio>Asesoramiento de prevención de gestión de riesgos por inundación en el barrio Villa Cindy, Localidad de Suba</servicio>
                     <cantidad>6</cantidad>
                     <unidad>horas</unidad>
                     <preciouni>45500</preciouni>
@@ -96,9 +95,9 @@
             <numerofactura>0004</numerofactura>
             <detalles>
                 <item>
-                    <servicio>Implementaciòn del uso de fotogametria para el desarrollo del cultivo de cafè en el Municipio de LA Uniòn, valle del Cauca</servicio>
+                    <servicio>Implementación del uso de fotogrametría para el desarrollo del cultivo de café en el Municipio de La Unión, Valle del Cauca</servicio>
                     <cantidad>20</cantidad>
-                    <unidad>dias</unidad>
+                    <unidad>días</unidad>
                     <preciouni>570000</preciouni>
                     <preciotot>11400000</preciotot>
                 </item>
@@ -140,7 +139,7 @@
             <numerofactura>0006</numerofactura>
             <detalles>
                 <item>
-                    <servicio>Asesoría pedagógica de cartografia digital para el Instituto de Educaciòn Rural Francisco de Paula Santander, Cogua, Cundinamarca</servicio>
+                    <servicio>Asesoría pedagógica de cartografía digital para el Instituto de Educación Rural Francisco de Paula Santander, Cogua, Cundinamarca</servicio>
                     <cantidad>1</cantidad>
                     <unidad>Proyecto</unidad>
                     <preciouni>82740000</preciouni>
@@ -184,7 +183,7 @@
             <numerofactura>0008</numerofactura>
             <detalles>
                 <item>
-                    <servicio>Consultoría en marketing digital</servicio>
+                    <servicio>Consultoría en marketing digital para el recorrido turístico en Bazurto</servicio>
                     <cantidad>12</cantidad>
                     <unidad>horas</unidad>
                     <preciouni>50000</preciouni>
@@ -206,7 +205,7 @@
             <numerofactura>0009</numerofactura>
             <detalles>
                 <item>
-                    <servicio>Automatización de procesos para el desarrollo web de </servicio>
+                    <servicio>Automatización de procesos para el desarrollo web del Geovisor ambiental</servicio>
                     <cantidad>15</cantidad>
                     <unidad>horas</unidad>
                     <preciouni>70000</preciouni>

@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="servicios">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="encabezado"/>
+        <xs:element ref="facturas"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="encabezado">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="emisor"/>
+        <xs:element ref="titulo"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="emisor">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="nombre" type="xs:string"/>
+        <xs:element name="codigo" type="xs:string"/>
+        <xs:element name="telefono" type="xs:string"/>
+        <xs:element name="correo" type="xs:string"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="titulo">
+    <xs:complexType mixed="true">
+      <xs:attribute name="lang" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="facturas">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="factura" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="factura">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="receptor"/>
+        <xs:element name="fechaemisor" type="xs:string"/>
+        <xs:element name="numerofactura" type="xs:string"/>
+        <xs:element ref="detalles"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="receptor">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="nombre" type="xs:string"/>
+        <xs:element name="nit" type="xs:string"/>
+        <xs:element name="direccion" type="xs:string"/>
+        <xs:element name="telefono" type="xs:string"/>
+        <xs:element name="correo" type="xs:string"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="detalles">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="item"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="item">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="servicio" type="xs:string"/>
+        <xs:element name="cantidad" type="xs:string"/>
+        <xs:element name="unidad" type="xs:string"/>
+        <xs:element name="preciouni" type="xs:string"/>
+        <xs:element name="preciotot" type="xs:string"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
